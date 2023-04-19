@@ -11,7 +11,7 @@ public static void main(String []args) {
 	
 	Funcionario funcionario = new Funcionario(new Pessoa("Jeferson Souza","(43)998264852" , "rafaelkarlmarxs33@gmail.com", "857.354.342-87" ),"11/03/2003", " matutino" , " vespetino");
 	
-	Gerente gerente = new Gerente(new Pessoa("Marcos vagavo","(43)998264852" , "rafaelkarlmarxs33@gmail.com", "264.246.889-45"), infoEstoque, funcionario, funcionario );
+	Gerente gerente = new Gerente ("joao guilherme","jaozinholeiteiro@gmail.com","102.546.874-45","(46)556213599",infoEstoque, funcionario, funcionario );
 	
 	Cliente infoClientes = new Cliente(infoPessoa, new Pedido(null,null,null),infoProduto);			
 	
@@ -32,12 +32,13 @@ public static void main(String []args) {
 			"\no mesmo que atendeu o cliente " + infoCliente.getNomeCliente().getNome() + "\nesse cliete comprou um " +
 	infoCliente.getCompraProduto().getNome()+ "\no cpf de " +
 			funcionario.getNomeFuncionario().getNome()+ " é " +funcionario.getNomeFuncionario().getCpf()+ 
-			"\no cpf do gerente " + gerente.getIdentificacao().getCpf()+ 
+			"\no cpf do gerente " + gerente.getCpf()+ 
 			"\ne olha que ele contratou esse funcionario para o periodo " + funcionario.getEntrada()+ 
 			"\no coitado saia todo dia no periodo " + funcionario.getSaida()+ 
 			"\npelomenos ele lucrou bem com " + infoCliente.getCompraProduto().getNome()+ 
 			"\nque vendeu para o cliente " + infoCliente.getNomeCliente().getNome() + 
-			"\nno valor de: " + vendedor.getVendeProduto().getValor());
-	
+			"\nno valor de: " + vendedor.getVendeProduto().getValor()+
+			"\no nome do gerente é " + gerente.getNome() );
+			
 }
 }

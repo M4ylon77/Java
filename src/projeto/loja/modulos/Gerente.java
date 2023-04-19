@@ -1,35 +1,27 @@
 package projeto.loja.modulos;
 
-public class Gerente {
-	private Pessoa identificacao;
-	private Estoque controlaEstoque;
-	private Funcionario contrataFuncionario;
-	private Funcionario demiteFuncionario;
-	
-	public Gerente(Pessoa identificacao, Estoque controlaEstoque, Funcionario contrataFuncionario, Funcionario demiteFuncionario) {
-		super();
-		this.identificacao=identificacao;
-		this.controlaEstoque = controlaEstoque;
-		this.contrataFuncionario = contrataFuncionario;
-		this.demiteFuncionario = demiteFuncionario;
-	}
+public class Gerente extends Pessoa {
 
-	public Pessoa getIdentificacao() {
-		return identificacao;
-	}
+    private Estoque controlaEstoque;
+    private Funcionario contrataFuncionario;
+    private Funcionario demiteFuncionario;
 
-	public Estoque getControlaEstoque() {
-		return controlaEstoque;
-	}
+    public Gerente(String nome,String email, String numeroTelefone, String cpf, Estoque controlaEstoque, Funcionario contrataFuncionario, Funcionario demiteFuncionario) {
+        super(nome,email ,cpf, numeroTelefone );
+        this.controlaEstoque = controlaEstoque;
+        this.contrataFuncionario = contrataFuncionario;
+        this.demiteFuncionario = demiteFuncionario;
+    }
 
-	public Funcionario getContrataFuncionario() {
-		return contrataFuncionario;
-	}
+    public Estoque getControlaEstoque() {
+        return controlaEstoque;
+    }
 
-	public Funcionario getDemiteFuncionario() {
-		return demiteFuncionario;
-	}
-	
-	
-	
+    public Funcionario getContrataFuncionario() {
+        return contrataFuncionario;
+    }
+
+    public Funcionario getDemiteFuncionario() {
+        return demiteFuncionario;
+    }
 }
