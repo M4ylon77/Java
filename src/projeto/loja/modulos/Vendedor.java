@@ -1,13 +1,13 @@
 package projeto.loja.modulos;
 
 public class Vendedor {
-	private Pessoa identificacao;
+	private Funcionario identificacao;
 	private Cliente atendeCliente;
 	private Produto vendeProduto;
 	private Pedido verificaPedido;
 	private Pedido cadastraPedido;
 	
-	public Vendedor(Pessoa identificacao, Cliente atendeCliente, Produto vendeProduto, Pedido verificaPedido, Pedido cadastraPedido) {
+	public Vendedor(Funcionario identificacao, Cliente atendeCliente, Produto vendeProduto, Pedido verificaPedido, Pedido cadastraPedido) {
 		super();
 		this.identificacao= identificacao;
 		this.atendeCliente = atendeCliente;
@@ -16,7 +16,7 @@ public class Vendedor {
 		this.cadastraPedido = cadastraPedido;
 	}
 
-	public Pessoa getIdentificacao() {
+	public Funcionario getIdentificacao() {
 		return identificacao;
 	}
 
