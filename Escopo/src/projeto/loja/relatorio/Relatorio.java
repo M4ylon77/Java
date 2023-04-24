@@ -32,7 +32,7 @@ public class Relatorio {
 			   gravador.format("===Teclados===\n\n");
 			for(Teclado teclados : produto.getTeclados()) {
 				   gravador.format("Nome:"+teclados.getNome()+
-		    		"\nValor" +teclados.getValor()+"\n");
+		    		"\nValor:" +teclados.getValor()+"\n");
 
 		}
 
@@ -40,7 +40,7 @@ public class Relatorio {
 			   gravador.format("===Mouses===\n\n");	
 			for(Mouse mouses : produto.getMouse()) {
 				   gravador.format("Nome:"+mouses.getNome()+
-		    		"\nValor" +mouses.getValor()+"\n" + "\n");
+		    		"\nValor:" +mouses.getValor()+"\n" + "\n");
 
 		}
 
@@ -48,7 +48,7 @@ public class Relatorio {
 			   gravador.format("===Headsets===\n\n");
 			for(Headset headsets : produto.getHeadsets()) {
 				   gravador.format("Nome:"+headsets.getNome()+
-		    		"\nValor" +headsets.getValor()+"\n\n");
+		    		"\nValor:" +headsets.getValor()+"\n\n");
 
 		}
 		

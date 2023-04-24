@@ -88,21 +88,21 @@ public static void main(String[] args) {
 	System.out.println("===Teclados===\n");
 	for(Teclado teclados : produto.getTeclados()) {
     System.out.println("Nome:"+teclados.getNome()+
-    		"\nValor" +teclados.getValor()+"\n");
+    		"\nValor:" +teclados.getValor()+"\n");
 
 }
 
 	System.out.println("===Mouses===\n");	
 	for(Mouse mouses : produto.getMouse()) {
     System.out.println("Nome:"+mouses.getNome()+
-    		"\nValor" +mouses.getValor()+"\n");
+    		"\nValor:" +mouses.getValor()+"\n");
 
 }
 
 	System.out.println("===Headsets===\n");
 	for(Headset headsets : produto.getHeadsets()) {
     System.out.println("Nome:"+headsets.getNome()+
-    		"\nValor" +headsets.getValor()+"\n");
+    		"\nValor:" +headsets.getValor()+"\n");
 
 }
 }

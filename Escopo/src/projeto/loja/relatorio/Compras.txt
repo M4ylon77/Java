@@ -25,38 +25,38 @@ Telefone:(41)3334-5556
 ===Teclados===
 
 Nome:Teclado Razer
-Valor345.78
+Valor:345.78
 Nome:Teclado Hyperx
-Valor339.99
+Valor:339.99
 Nome:Teclado Red Dragon
-Valor339.99
+Valor:339.99
 Nome:Teclado LogTech
-Valor339.99
+Valor:339.99
 ===Mouses===
 
 Nome:Mouse Razer
-Valor640.8
+Valor:640.8
 
 Nome:Mouse Hyperx
-Valor150.87
+Valor:150.87
 
 Nome:Mouse Red Dragon
-Valor150.87
+Valor:150.87
 
 Nome:Mouse LogTech
-Valor150.87
+Valor:150.87
 
 ===Headsets===
 
 Nome:Headset Cobra
-Valor178.68
+Valor:178.68
 
 Nome:Headset Red Dragon
-Valor500.56
+Valor:500.56
 
 Nome:Headset Hyperx
-Valor563.56
+Valor:563.56
 
 Nome:Headset LogTech 
-Valor430.0
+Valor:430.0
 
