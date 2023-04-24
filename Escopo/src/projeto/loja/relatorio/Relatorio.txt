@@ -1,5 +1,0 @@
-Cliente: Junin
-ID: 1
-===Informações do produto === 
-Teclado Hyperx
-Valor: 2415.0
