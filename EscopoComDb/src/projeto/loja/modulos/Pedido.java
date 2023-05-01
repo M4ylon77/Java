@@ -2,18 +2,20 @@ package projeto.loja.modulos;
 
 import java.util.List;
 
+import projeto.loja.listas.ListaProduto;
+
 public class Pedido {
 	
 	private int id;
-	private Produto produto;
+	private ListaProduto produto;
 	
-	public Pedido(int id, Produto produto) {
+	public Pedido(int id, ListaProduto produto) {
 			super();
 			this.id = id;
 			this.produto = produto;
 	
 	}
-	public Produto getProduto() {
+	public ListaProduto getProduto() {
 		return produto;
 	}
 	public int getId() {
