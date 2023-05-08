@@ -25,7 +25,8 @@ public class TelaDeProdutos {
 		System.out.println("[1] "+Mensagem.MSG_LISTAR);
 		System.out.println("[2] "+Mensagem.MSG_CADASTRAR);
 		System.out.println("[3] "+Mensagem.MSG_EXCLUIR);
-		System.out.println("[4] "+Mensagem.MSG_VOLTAR);
+		System.out.println("[4]");
+		System.out.println("[5] "+Mensagem.MSG_VOLTAR);
 		opcao = leitor.nextInt();
 		id++;
 		
@@ -45,8 +46,13 @@ public class TelaDeProdutos {
 			ControlProduto.excluir();
 			// EXCLUIR PRODUTO
 			break;
-		
-		case 4: 
+		case 4:
+			
+			ControlProduto.atualizar();
+			
+			break;
+			
+		case 5: 
 			id=id-id;
 			TelaPrincipal.mostrar();
 			break;

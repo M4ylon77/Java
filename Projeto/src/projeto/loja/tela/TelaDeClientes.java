@@ -17,7 +17,8 @@ public class TelaDeClientes {
 		System.out.println("[1] "+Mensagem.MSG_LISTAR);
 		System.out.println("[2] "+Mensagem.MSG_CADASTRAR);
 		System.out.println("[3] "+Mensagem.MSG_EXCLUIR);
-		System.out.println("[4] "+Mensagem.MSG_VOLTAR);
+		System.out.println("[4]");
+		System.out.println("[5] "+Mensagem.MSG_VOLTAR);
 		opcao = leitor.nextInt();
 		switch(opcao) {
 		case 1:
@@ -30,9 +31,12 @@ public class TelaDeClientes {
 			ControlCliente.excluir();
 			break;
 		case 4:
-			TelaPrincipal.mostrar();
+			
+			ControlCliente.atualizar();
+			
 			break;
-		}
-		
+		case 5:
+			TelaPrincipal.mostrar();
+			break;}
 	}
 }

@@ -45,8 +45,11 @@ public interface Mensagem {
 	final static String NOME_PRODUTO = "Informe a marca do produto:";
 	final static String VALOR_PRODUTO = "Informe o valor do produto:";
 	final static String PRODUTO_ADD	= "\nProduto adicionado com sucesso!\n";
-	final static String ADD_PRODUTO = "\nAinda não há produtos adicionados!\n";
-	final static String ATUALIZAR_CLIENTE = "Informe id";
-	
+	final static String ADD_PRODUTO = "\n====Ainda não há produtos adicionados!====\n";
+	final static String ATUALIZAR_CLIENTE = "Informe ID";
+	final static String MSG_ATUALIZAR_CLIENTE = "Atualização";
+	final static String SELEÇAO_TECLADO = "";
+	final static String SELEÇAO_MOUSE = "";
+	final static String SELEÇAO_HEADSET = "";
 	
 }

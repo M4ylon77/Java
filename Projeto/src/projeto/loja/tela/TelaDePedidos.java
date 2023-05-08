@@ -2,6 +2,8 @@ package projeto.loja.tela;
 
 import java.util.Scanner;
 
+import projeto.loja.controller.ControlCliente;
+import projeto.loja.controller.ControlPedido;
 import projeto.loja.util.Mensagem;
 
 public class TelaDePedidos {
@@ -9,18 +11,21 @@ public class TelaDePedidos {
 	public static void mostrar() {
 		
 	Scanner leitor = new Scanner(System.in);
-	int opcao;
+
 	
 	System.out.println(Mensagem.TELA_PEDIDOS);
 	System.out.println(Mensagem.MSG_ESCOLHA);
-	System.out.println("[1] "+Mensagem.MSG_LISTAR);
-	System.out.println("[2] "+Mensagem.MSG_CADASTRAR);
-	System.out.println("[3] "+Mensagem.MSG_EXCLUIR);
-	System.out.println("[4] "+Mensagem.MSG_VOLTAR);
-	opcao = leitor.nextInt();
+	System.out.println("[1] Selecionar Cliente");
+	System.out.println("[2] Selecionar Produto");
+	System.out.println("[3] Finalizar Pedido");
+	System.out.println("[4] Voltar");
+	int escolha = leitor.nextInt();
+	leitor.nextLine();
+
 	
-	switch(opcao) {
+	switch(escolha) {
 	case 1:
+		ControlCliente.selecionar();
 		// LISTAR NOVO PEDIDO
 		break;
 	case 2:

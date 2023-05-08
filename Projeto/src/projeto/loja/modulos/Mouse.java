@@ -1,10 +1,11 @@
 package projeto.loja.modulos;
 
 public class Mouse extends Teclado{
-	public Mouse (String nome, double valor) {
-		super(nome,valor);
-		
+
+	public Mouse() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
-	
+
 	
 }
