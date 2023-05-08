@@ -150,7 +150,7 @@ public class ControlCliente {
 		    for (Pessoa registro1 : registro.getPessoa()) {
 		        i++;
 		      
-		        System.out.println(i+".NOME: " + registro1.getNome() +
+		        System.out.println("\n" + i+".NOME: " + registro1.getNome() +
 		                            "\nCPF: " + registro1.getCpf() +
 		                            "\nTELEFONE: " + registro1.getTelefone()+
 		                            "\nEmail: " + registro1.getEmail());
@@ -160,8 +160,8 @@ public class ControlCliente {
 		    i = leitor.nextInt();
 		    
 		    if (i > 0 && i <= registro.getPessoa().size()) {
-		     cliente = registro.getPessoa().get(i).getNome();
-		     System.out.println("nome" + cliente);
+		     cliente = registro.getPessoa().get(i-1).getNome();
+		     System.out.println("Cliente " + cliente + " Selecionado!");
 		     
 		    i=0;
 		    TelaDePedidos.mostrar();

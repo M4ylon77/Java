@@ -4,32 +4,32 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Pedido {
-	private List<Pedido> pedido = new ArrayList<Pedido>();
+	
 	
 	private int id;
-	private Produto produto;
+	private String produto;
+	private String  pessoa;
 	
-	public void adicionar(Pedido pedido) {
-		this.pedido.add(pedido);
+	public String getProduto() {
+		return produto;
 	}
-	public void remover(Pedido pedido) {
-		this.pedido.remove(pedido);
+	public void setProduto(String produto) {
+		this.produto = produto;
 	}
-	public  List<Pedido> getPedido(){
-		return pedido;
+	public String getPessoa() {
+		return pessoa;
+	}
+	public void setPessoa(String pessoa) {
+		this.pessoa = pessoa;
 	}
 	
 	public void setId(int id) {
 		this.id = id;
 	}
-	public void setProduto(Produto produto) {
-		this.produto = produto;
-	}
-	public Produto getProduto() {
-		return produto;
-	}
+	
 	public int getId() {
 		return id;
 	}
+	
 	
 }

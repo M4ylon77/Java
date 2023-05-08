@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import projeto.loja.controller.ControlCliente;
 import projeto.loja.controller.ControlPedido;
+import projeto.loja.controller.ControlProduto;
 import projeto.loja.util.Mensagem;
 
 public class TelaDePedidos {
@@ -29,9 +30,11 @@ public class TelaDePedidos {
 		// LISTAR NOVO PEDIDO
 		break;
 	case 2:
+		ControlProduto.selecionar();
 		// CADASTRAR NOVO PEDIDO
 		break;
 	case 3:
+		ControlPedido.selecionar();
 		// EXCLUIR PEDIDO
 		break;
 	case 4:
