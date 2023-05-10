@@ -1,6 +1,7 @@
 package projeto.loja.modulos;
 
-public class Teclado {
+public class Produto {
+
 	private String nome;
 	private double valor;
 	
